@@ -88,7 +88,7 @@
 #     print("Count is:", num)
 #     num += 1
 
-# # Print students marks using list and while loop
+# Print students marks using list and while loop
 # marks = [85, 90, 78, 92, 88]
 # index = 0
 # while index < len(marks):
@@ -112,6 +112,7 @@
 
 # while True:
 #     print("This loop will run forever unless interrupted.") 
+#     break
 
 # num2=1
 # while num2 <= 10:
@@ -122,7 +123,7 @@
 # num2=1
 # while num2 <= 10:
 #     print("Number:", num2)
-#     break
+
    
 # #Break and Continue Statements in Loops
 # #Break Statement: The break statement is used to exit a loop prematurely when a certain condition is met. It immediately terminates the loop and transfers control to the statement following the loop.
@@ -130,7 +131,7 @@
 # #Continue Statement: The continue statement is used to skip the current iteration of a loop and move to the next iteration. It allows you to bypass certain conditions without exiting the loop entirely.
 
 
-# #Example of Break Statement
+#Example of Break Statement
 # print("Break Statement Example:")
 # for i in range(10):
 #     if i == 5:
@@ -161,12 +162,14 @@
 
 # number = 5
 # while number < 10:
+#     number += 1
 #     if number == 7:
-#         print("Skipping number =", number)
+#         print("Breaking the loop at number =", number)
 #         continue
 #     print("Countdown:", number)
     
-
+    
+  #number = number + 1
 # while True:
 #         print("This loop will run forever unless interrupted.")
 
@@ -178,14 +181,14 @@
     
     
     
-# number = 5
-# while number < 10:
-#     print("Countdown:", number)
-#     number += 1  #number = number + 1
-#     if number == 7:
-#         print("Skipping number =", number)
-#         continue
-    
+number = 5
+while number < 10:
+    print("Countdown:", number)
+    number += 1  #number = number + 1
+    if number == 7:
+        print("Skipping number =", number)
+        continue
+    print("After continue, number is:", number)
     
 # number = 4
 # while number < 10:
@@ -218,15 +221,13 @@
 #         print(f"Outer loop iteration {i}, Inner loop iteration {j}")
     
 # Nested loop example using while loop
-outer = 1
-while outer <= 3:
-    inner = 1
-    while inner <= 2:
-        print(f"Outer loop iteration {outer}, Inner loop iteration {inner}")
-        inner += 1
-    outer += 1
+# outer = 1
+# while outer <= 3:
+#     inner = 1
+#     while inner <= 2:
+#         print(f"Outer loop iteration {outer}, Inner loop iteration {inner}")
+#         inner += 1
+#     outer += 1
 
 
 # # Note: Be cautious when using infinite loops, as they can cause your program to become unresponsive. Always ensure you have a way to break out of them, such as a keyboard interrupt (Ctrl+C) or a specific condition to exit the loop.
-
-
