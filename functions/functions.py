@@ -106,12 +106,13 @@ print("Sum is:", result)
 #     sum = a + b
 #     diff = a - b
 #     mutiply = a * b
-    #   return sum
+#     # return sum
 #     return sum, diff, mutiply # (sum, diff, multiply) as tuple
 
-# result=multiple_return(10, 20)
+# result=multiple_return(10, 20) 
+# # print(result)
 # s,d, m = multiple_return(10, 5)
-# print("Multiple Returns:", result)  # Output will be a tuple (30, -10, 200)
+# # print("Multiple Returns:", result)  # Output will be a tuple (30, -10, 200)
 # print("Sum, Difference, and Product:", s) 
 # print("Sum, Difference, and Product:", d)  
 # print("Sum, Difference, and Product:", m)  
@@ -127,11 +128,11 @@ print("Sum is:", result)
 # print("Sum with positional arguments:", result) 
 
 
-# def sum_numbers(a, b, *args):
-#     total = a + b+ sum(args)
+# def sum_numbers(*args):
+#     total = sum(args)
 #     return total
 
-# result = sum_numbers(10, 20, 30, 40, 50)
+# result = sum_numbers()
 # print("Sum with positional arguments:", result) 
     
 # def sum_numbers(*args):
@@ -166,13 +167,17 @@ print("Sum is:", result)
 #     print(school)
 
 # show_school()
-
+# print(school)
 
 
 # Global Variable Modification
 # count = 10
 # def update():
 #     count = count + 1  # ❌ Error
+#     print(count)
+# print(count)
+# update()
+
 
 # count = 10
 # def update():
@@ -186,20 +191,20 @@ print("Sum is:", result)
 # Enclosing Scope (Nested Functions)
 # Variables in an outer function, used by an inner function.
 
-def outer():
-    msg = "Hello"
+# def outer():
+#     msg = "Hello"
 
-    def inner():
-        print(msg)
+#     def inner():
+#         print(msg)
 
-    inner()
-outer()
+#     inner()
+# outer()
 
 # Modifying Enclosing Variable
 # def outer():
 #     count = 5
 #     def inner():
-#         nonlocal count
+#         count
 #         count += 1
 #         print(count)
 #     inner()
