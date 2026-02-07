@@ -151,23 +151,23 @@ print("Sum is:", result)
 # Local Scope
 # A variable created inside a function.
 
-# def show_marks():
-#     marks = 85  # local variable
-#     print(marks)
+def show_marks():
+    marks = 85  # local variable
+    print(marks)
 
-# # print(marks)
-# show_marks()
+# print(marks)
+show_marks()
 
 
 # Global Scope
 # A variable created outside all functions.
 
-# school = "ABC School"  # global variable
-# def show_school():
-#     print(school)
+school = "ABC School"  # global variable
+def show_school():
+    print(school)
 
-# show_school()
-# print(school)
+show_school()
+print(school)
 
 
 # Global Variable Modification
