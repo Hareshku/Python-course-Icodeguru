@@ -18,7 +18,7 @@ student = {
 # Unlike lists, dictionaries don’t use index numbers.
 
 # 🔹 3. Dictionary Syntax
-dict_name = {key: value, key: value}
+# dict_name = {key: value, key: value}
 
 
 # Example:
