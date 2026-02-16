@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Kumar",
+        "age": 22,
+        "marks": [
+            90.0,
+            98.0
+        ],
+        "total": 188.0,
+        "percentage": 94.0,
+        "grade": "A+"
+    }
+]
