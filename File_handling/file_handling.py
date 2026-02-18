@@ -70,9 +70,9 @@
 # 3. Basic File Operations
 # 3.1 Creating and Writing to a File
 # # Writing to a text file
-# with open("example.txt", "w") as file:
+# with open("file.txt", "w") as file:
 #     file.write("Hello World!\n")
-#     file.write("Python File Handling is easy.\n")
+#     file.write("Python File Handling is easy topic.\n")
 
 
 # ✅ Explanation:
@@ -83,7 +83,7 @@
 
 # 3.2 Reading from a File
 # # Reading from a file
-# with open("example.txt", "r") as file:
+# with open("file.txt", "r") as file:
 #     content = file.read()
 #     print(content)
 
@@ -94,11 +94,11 @@
 # Python File Handling is easy.
 
 # 3.3 Appending Data
-# with open("example.txt", "a") as file:
+# with open("file.txt", "a") as file:
 #     file.write("Appending a new line.\n")
 
 # 3.4 Reading Line by Line
-# with open("example.txt", "r") as file:
+# with open("file.txt", "r") as file:
 #     for line in file:
 #         print(line.strip())  # strip removes newline characters
 
@@ -106,8 +106,9 @@
 # 4.1 Working with CSV Files
 # import csv
 
-# # Writing to CSV
-# with open("data.csv", "w", newline="") as csvfile:
+# Writing to CSV
+# with open("data.csv", "w") as csvfile:
+# # with open("data.csv", "w", newline="") as csvfile:
 #     writer = csv.writer(csvfile)
 #     writer.writerow(["Name", "Age", "Country"])
 #     writer.writerow(["Alice", 25, "USA"])
@@ -123,9 +124,9 @@
 # Real-world use case: Storing user details, exporting reports.
 
 # 4.2 JSON Files
-# import json
-
-# # Writing JSON
+import json
+# from json import dump
+# Writing JSON
 # data = {"name": "Alice", "age": 25, "city": "New York"}
 # with open("data.json", "w") as json_file:
 #     json.dump(data, json_file)
@@ -140,7 +141,8 @@
 
 # 5. Advanced File Handling
 # 5.1 Binary Files (Images, PDFs)
-# # Reading a binary file (image)
+
+# Reading a binary file (image)
 # with open("image.png", "rb") as img_file:
 #     data = img_file.read()
 #     print(f"Image size: {len(data)} bytes")
