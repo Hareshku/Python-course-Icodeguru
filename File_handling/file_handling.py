@@ -74,6 +74,16 @@
 #     file.write("Hello World!\n")
 #     file.write("Python File Handling is easy topic.\n")
 
+# Flushes Data to Disk
+# When you write to a file, the operating system often stores data in a temporary buffer for efficiency.
+# Closing the file ensures that all buffered data is actually written to the disk.
+# If you don’t close it, some data may not be saved, causing data loss.
+
+# Frees System Resources
+# Files consume system resources (like file descriptors).
+# Prevents Data Corruption
+# Good Programming Practice
+
 
 # ✅ Explanation:
 
@@ -104,11 +114,11 @@
 
 # 4. Intermediate File Handling
 # 4.1 Working with CSV Files
-# import csv
+import csv
 
 # Writing to CSV
 # with open("data.csv", "w") as csvfile:
-# # with open("data.csv", "w", newline="") as csvfile:
+# with open("data.csv", "w", newline="") as csvfile:
 #     writer = csv.writer(csvfile)
 #     writer.writerow(["Name", "Age", "Country"])
 #     writer.writerow(["Alice", 25, "USA"])
@@ -136,6 +146,24 @@ import json
 #     data_loaded = json.load(json_file)
 #     print(data_loaded)
 
+# Appending to JSON
+import json
+new_data = {"name": "Bob", "age": 30, "city": "London"}
+
+# # Step 1: Read existing data
+with open("data.json", "r") as file:
+    existing_data = json.load(file)
+
+# Step 2: Convert to list if it's a dict
+if isinstance(existing_data, dict):
+    existing_data = [existing_data]
+
+# Step 3: Append new data
+existing_data.append(new_data)
+
+# Step 4: Write back
+with open("data.json", "w") as file:
+    json.dump(existing_data, file, indent=4)
 
 # Use Case: APIs, configuration files, storing structured data.
 
